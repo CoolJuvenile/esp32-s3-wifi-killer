@@ -1,0 +1,8 @@
+# 让 GitHub linguist 正确识别本项目语言
+# .h 数据表体积远大于源码，会把整个项目判成「无语言」
+*.h linguist-language=C++
+*.cpp linguist-detectable
+*.ino linguist-language=C++
+
+# 大体积位图数据不计入语言统计
+data.h linguist-vendored
